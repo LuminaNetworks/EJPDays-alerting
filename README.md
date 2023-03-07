@@ -5,9 +5,9 @@ Ce projet est un outil d'alerting pour les jours EJP en france
 
 
 ##### --
-## Version cli-linux
+## Version python
 
-Cette version de EJPDays-alerting à pour but d'etre executer sur un hote linux et executer a la voler par une tache cron ou autre.
+Cette version python de EJPDays-alerting à pour but d'etre executer sur n'importe quel hote compatible avec python
 
 
 
@@ -27,11 +27,11 @@ Installation d'EJPDays-alerting
 
 ```bash
   apt update
-  apt install git curl wget
+  apt install git curl wget python3 python3-pip
 
   git clone https://github.com/LuminaNetworks/EJPDays-alerting.git
-  cd EJPDays-alerting/linux
-  chmod a+x script.sh
+  cd EJPDays-alerting
+  chmod a+x index.py
 ```
     
 ### Affichage level
@@ -49,21 +49,21 @@ tips: Le niveau d'affichage affichera toujours les niveaux inferieurs
 ### Utilisation/Exemples
 
 Affichage dans la console
-```bash
+```python
   cd EJPDays-alerting/linux 
-  bash ./script.sh
+  python index.py
 ```
 
 Affichage dans un fichier
-```bash
+```python
   cd EJPDays-alerting/linux 
-  bash ./script.sh -o output.txt
+  python index.py -o output.txt
 ```
 
 Utilisation du niveau d'affichage
-```bash
+```python
   cd EJPDays-alerting/linux 
-  bash ./script.sh -l 3
+  python index.py -l 3
 ```
 ### Démonstration
 
